@@ -1,3 +1,5 @@
+# This is a fork from [k8s-minion-manager](https://github.com/argoproj/k8s-minion-manager)
+
 # Spot Instances use and management for Kubernetes
 
 The minion-manager enables the intelligent use of Spot Instances in Kubernetes.
