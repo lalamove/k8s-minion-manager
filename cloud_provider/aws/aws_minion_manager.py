@@ -742,7 +742,7 @@ class AWSMinionManager(MinionManagerBase):
         requests = response.SpotInstanceRequests
         for request in requests:
             if 'Status' in request and 'Code' in request.Status:
-                if OVERSUBSCRIBED_MESSAGE in request.Status.Code or CAPACITY_NOT_AVAILABLE in request.Status.Code:
+                if OVERSUBSCRIBED_MESSAGE == request.Status.Code or CAPACITY_NOT_AVAILABLE == request.Status.Code:
                     return True
                 
         return False
